@@ -289,18 +289,18 @@ ul.row {
 }
 
 .header {
-    pad: var(--header-padding);
+    padding: var(--header-padding);
 }
 
 .header-logo {
     position: var(--header-logo-position);
 }
 
-.header-logo link {
+.header-logo a {
     display: var(--header-logo-link-display);
     position: var(--header-logo-link-position);
-    margin-top: var(--header-logo-link-top);
-    margin-left: var(--header-logo-link-left);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
