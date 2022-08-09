@@ -345,12 +345,12 @@ ul.row {
 .card-work .card-title {
     text-align: center;
     margin: 0;
-    opacity: 0.01;
+    opacity: 0;
     height: 100%;
     position: relative;
 }
 
-.card-title a, .card-work a {
+.card-work .card-title a {
     display: block;
     text-decoration: none;
     padding-top: 45%;
