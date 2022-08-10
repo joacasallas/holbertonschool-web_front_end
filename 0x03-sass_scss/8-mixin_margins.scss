@@ -1,12 +1,13 @@
 /*use a mixin*/
-@mixin rule_mixin() {
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    div {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+@mixin maxin_margin($size) {
+    margin-left: $size;
+    margin-right: $size;
+  }
+
+body {
+    @include maxin_margin(10px);
 }
-@include rule_mixin()
+
+div {
+    @include maxin_margin(15px);
+}
