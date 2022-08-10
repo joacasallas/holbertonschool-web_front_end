@@ -1,0 +1,12 @@
+/*use a mixin*/
+@mixin rule_mixin() {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    div {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@include rule_mixin()
