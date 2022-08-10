@@ -1,0 +1,7 @@
+/*creates classes with different width*/
+$list_width: 100%, 50%, 33.3333333333%, 25%;
+@for $i from 1 to 5 {
+    .col-#{$i} {
+        width: nth($list_width, $i)
+    }   
+}
