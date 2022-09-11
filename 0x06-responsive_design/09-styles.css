@@ -313,7 +313,7 @@ ul.row {
   padding: 2.5rem;
   position: relative;
   user-select: none;
-  /*display: none;*/
+  display: none;
 }
 
 .header .menu-icon .navicon {

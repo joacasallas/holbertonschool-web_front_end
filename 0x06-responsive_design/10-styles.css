@@ -96,7 +96,7 @@
   }
   
   /* Base
-              ============================= */
+                  ============================= */
   
   *,
   *:before,
@@ -171,13 +171,13 @@
     color: var(--color-primary);
     background: var(--color-white);
   }
-
+  
   @media only screen and (max-width: 480px) {
     .html {
       font-size: 57%;
     }
   }
-
+  
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     .html {
       font-size: 60%;
@@ -185,7 +185,7 @@
   }
   
   /* Helpers
-              ============================= */
+                  ============================= */
   
   .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
@@ -204,7 +204,7 @@
   /*** 2. LAYOUT ***/
   
   /* Layout
-              ============================= */
+                  ============================= */
   
   .container {
     max-width: 960px;
@@ -213,7 +213,7 @@
   }
   
   /* Grid
-              ============================= */
+                  ============================= */
   
   ul.row {
     margin: -1rem;
@@ -260,7 +260,7 @@
   }
   
   /* Navbar
-              ============================= */
+                  ============================= */
   
   .nav {
     margin: 0;
@@ -363,7 +363,7 @@
   }
   
   /* menu btn
-      ============================= */
+          ============================= */
   
   .header .menu-btn {
     display: none;
@@ -427,7 +427,7 @@
   }
   
   /* Header
-              ============================= */
+                  ============================= */
   
   .header {
     padding: var(--header-padding);
@@ -443,7 +443,7 @@
   }
   
   /* Footer
-              ============================= */
+                  ============================= */
   
   .footer {
     --nav-item-font-weight: normal;
@@ -473,10 +473,26 @@
     fill: var(--text-color);
   }
   
+  @media only screen and (max-width: 767px) {
+    :root {
+      --footer-padding: 5rem 2rem 1rem;
+    }
+  
+    .footer .social.nav,
+    .footer .footer-nav {
+      text-align: center;
+    }
+  
+    .social.nav li ~ li,
+    .footer-nav li ~ li {
+      padding-left: 2rem;
+    }
+  }
+  
   /*** 3. SECTION ***/
   
   /* Section (all styles)
-              ============================= */
+                  ============================= */
   
   .section {
     padding: var(--section-padding);
@@ -513,7 +529,7 @@
   }
   
   /* Section theming
-              ============================= */
+                  ============================= */
   
   [data-section-theme="dark"] {
     --button-color: var(--color-white);
@@ -523,7 +539,7 @@
   }
   
   /* Section HERO
-              ============================= */
+                  ============================= */
   
   .section-hero {
     position: relative;
@@ -557,6 +573,11 @@
     justify-content: center;
     min-height: 35vh;
   }
+
+  .article-page .section-hero {
+    margin-top: -8.5rem;
+    padding-top: 5rem;
+  }
   
   @media only screen and (max-width: 767px) {
     .section-hero {
@@ -573,7 +594,7 @@
   }
   
   /* Section Latest news
-              ============================= */
+                  ============================= */
   
   .section-latest-news .row {
     flex-direction: row-reverse;
@@ -586,14 +607,14 @@
   }
   
   /* Section SERVICES
-              ============================= */
+                  ============================= */
   
   .section-services .row {
     flex-wrap: wrap;
   }
   
   /* Section ABOUT US
-              ============================= */
+                  ============================= */
   
   .section-about-us [class*='col-'] {
     align-self: center;
@@ -602,14 +623,14 @@
   /*** 4. CARD ***/
   
   /* Card (all styles)
-              ============================= */
+                  ============================= */
   
   .card-category {
     color: var(--color-primary);
   }
   
   /* Card WORK
-              ============================= */
+                  ============================= */
   
   .card-work .card-outer {
     position: relative;
@@ -673,8 +694,23 @@
     opacity: 1;
   }
   
+  @media only screen and (max-width: 767px) {
+    .card-work .card-inner {
+      color: var(--color-white);
+      position: relative;
+    }
+  
+    .card-work .card-title {
+      opacity: 1;
+    }
+  
+    .card-work .card-title a {
+      padding: 2rem 1rem 0 1rem;
+    }
+  }
+  
   /* Card SERVICES
-              ============================= */
+                  ============================= */
   
   .card-services .card-title {
     margin: 0;
@@ -695,7 +731,7 @@
   }
   
   /* Card TESTIMONIAL
-              ============================= */
+                  ============================= */
   
   .card-testimonial {
     text-align: center;
@@ -730,7 +766,7 @@
   /*** ARTICLE PAGE ***/
   
   /* Section HERO (article)
-              ============================= */
+                  ============================= */
   
   .hero-article {
     background-size: 150rem 100rem;
@@ -765,7 +801,7 @@
   }
   
   /* Post
-              ============================= */
+                  ============================= */
   
   .post {
     display: flex;
@@ -800,7 +836,7 @@
   }
   
   /* Post Meta
-              ============================= */
+                  ============================= */
   
   .post-meta-list {
     flex-direction: column;
@@ -827,7 +863,7 @@
   }
   
   /* Tag list
-              ============================= */
+                  ============================= */
   
   .tag-list {
     padding: 0;
@@ -849,7 +885,7 @@
   /*** FORM ***/
   
   /* Comment section
-              ============================= */
+                  ============================= */
   
   .post-comments {
     width: 80%;
@@ -862,7 +898,7 @@
   }
   
   /* Basic form
-              ============================= */
+                  ============================= */
   
   form {
     display: flex;
@@ -917,7 +953,7 @@
   }
   
   /* Form group
-              ============================= */
+                  ============================= */
   
   .form-group {
     padding: 1rem;
@@ -931,7 +967,7 @@
   }
   
   /* Form field
-              ============================= */
+                  ============================= */
   
   .form-field-container {
     position: relative;
@@ -942,7 +978,7 @@
   }
   
   /* Form help
-              ============================= */
+                  ============================= */
   
   .form-group .form-help {
     margin: 0;
@@ -961,7 +997,7 @@
   }
   
   /* Form error handling
-              ============================= */
+                  ============================= */
   
   input:not(:placeholder-shown)~.form-field-icon::after {
     height: 100%;
@@ -1043,3 +1079,4 @@
     cursor: text;
     margin: 0 1rem;
   }
+  
